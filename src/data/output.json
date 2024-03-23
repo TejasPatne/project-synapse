@@ -1,0 +1,24 @@
+[
+    {
+        "Group No.":1,
+        "Project Title":"Poshan Sankalp",
+        "Team Members":"Rohan Singh, Surya Ganiga",
+        "Guide":"Dr. Anjali Yeole",
+        "Co-guide":"Anyone",
+        "Project Description (300-700 words)":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam perspiciatis commodi tempora blanditiis reprehenderit. Aperiam molestias modi quae qui laboriosam suscipit, deleniti dicta provident esse consequatur sunt architecto in. Enim, libero ut fugit animi recusandae, a quasi numquam similique aliquam illo veniam nobis omnis laboriosam tempore iure ea autem ad odit atque quod ex, iusto fuga. Omnis maiores dignissimos consectetur aliquam non odit ullam temporibus asperiores magnam esse iure minima doloremque molestias illo saepe tenetur, ipsa facere enim quae voluptate rerum. Tenetur corrupti error quo totam laborum voluptatem soluta, tempore rerum nemo reprehenderit esse culpa earum laudantium necessitatibus nam reiciendis.",
+        "GitHub Link":"https:\/\/github.com",
+        "Demo Video Link":"https://www.youtube.com/embed/WZOAtnI8u_g?si=NLfXUZMyxyvgGMRY",
+        "Project Domain":"HealthCare"
+    },
+    {
+        "Group No.":2,
+        "Project Title":"AI in Music",
+        "Team Members":"Rohan Singh, Akshat Tiwari",
+        "Guide":"Sangeeta Oswal",
+        "Co-guide":"Anyone",
+        "Project Description (300-700 words)":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam perspiciatis commodi tempora blanditiis reprehenderit. Aperiam molestias modi quae qui laboriosam suscipit, deleniti dicta provident esse consequatur sunt architecto in. Enim, libero ut fugit animi recusandae, a quasi numquam similique aliquam illo veniam nobis omnis laboriosam tempore iure ea autem ad odit atque quod ex, iusto fuga. Omnis maiores dignissimos consectetur aliquam non odit ullam temporibus asperiores magnam esse iure minima doloremque molestias illo saepe tenetur, ipsa facere enim quae voluptate rerum. Tenetur corrupti error quo totam laborum voluptatem soluta, tempore rerum nemo reprehenderit esse culpa earum laudantium necessitatibus nam reiciendis.",
+        "GitHub Link":"https:\/\/github.com",
+        "Demo Video Link":"https://www.youtube.com/embed/WPl10ZrhCtk?si=dkPXWysF-RYY7BRR",
+        "Project Domain":"Music"
+    }
+]

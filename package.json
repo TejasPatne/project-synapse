@@ -1,0 +1,47 @@
+{
+  "homepage": "https://rohansingh2023.github.io/BE-Projects-Showcase/",
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/scripts/excelToJson.js && vite",
+    "build": "node src/scripts/excelToJson.js && tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "node src/scripts/excelToJson.js && vite preview",
+    "convert": "node src/utils/file-conversion/convert.js",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@types/validator": "^13.11.9",
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.5",
+    "file-saver": "^2.0.5",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0",
+    "validator": "^13.11.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.7",
+    "@types/node": "^20.11.19",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "gh-pages": "^6.1.1",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.0"
+  }
+}
