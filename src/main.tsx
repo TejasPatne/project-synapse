@@ -1,11 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { RouterProvider } from "react-router-dom";
-import { router } from "./utils/router.tsx";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home.tsx";
+import Project from "./pages/Project.tsx";
+import Navbar from "./components/Navbar.tsx";
+import Footer from "./components/Footer.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/project/:projectId" element={<Project />} />
+    </Routes>
+    <Footer />
+    </BrowserRouter>
   </React.StrictMode>
 );
