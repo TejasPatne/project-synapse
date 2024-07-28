@@ -91,7 +91,7 @@ export default function Project() {
           <iframe
             width="560"
             height="315"
-            src={projectInfo? projectInfo["Demo Video Link"]: "https://www.youtube.com/embed/tp65dH-YIBg?si=817PgYnh9bNJm9dS"}
+            src={projectInfo? projectInfo["Demo Video Link"]: ""}
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
