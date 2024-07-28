@@ -89,11 +89,13 @@ export default function Project() {
         </div>
         <div>
           <iframe
-            className={`w-full h-[300px] md:min-h-[450px] ${!projectInfo["Demo Video Link"] && "hidden"}`}
-            src={(projectInfo && projectInfo["Demo Video Link"]) || "https://www.youtube.com/embed/"}
-            title="video player"
+            width="560"
+            height="315"
+            src={projectInfo? projectInfo["Demo Video Link"]: "https://www.youtube.com/embed/tp65dH-YIBg?si=817PgYnh9bNJm9dS"}
+            title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
         </div>
