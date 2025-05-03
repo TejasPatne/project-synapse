@@ -20,8 +20,13 @@ export default function ProjectTable() {
       <div className="flex items-center justify-between">
         <h1 className="text-2xl md:text-4xl font-bold">Project List</h1>
         <div className="flex text-slate-500 bg-slate-100 text-sm md:text-base md:px-4 py-1 rounded-full md:w-36 px-2">
-          <select className="outline-none w-full bg-slate-100" value={"2023-24"} onChange={()=> {}}>
+          <select
+            className="outline-none w-full bg-slate-100"
+            value={"2023-24"}
+            onChange={() => {}}
+          >
             <option value="2023-24">2023-24</option>
+            <option value="2024-25">2024-25</option>
           </select>
         </div>
       </div>
@@ -59,7 +64,9 @@ export default function ProjectTable() {
                       Predictive Maintenance
                     </option>
                   </select>
-                  <p className="w-[15vw] line-clamp-1 hidden md:contents">Guide</p>
+                  <p className="w-[15vw] line-clamp-1 hidden md:contents">
+                    Guide
+                  </p>
                 </div>
               </div>
             </div>
