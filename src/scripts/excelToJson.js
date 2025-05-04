@@ -87,5 +87,5 @@ async function processAllFiles(urlMap, outputJsonPath) {
 }
 
 // Run the processing
-const jsonFile = path.join(__dirname, "..", "db", "output2.json");
+const jsonFile = path.join(__dirname, "..", "db", "output.json");
 processAllFiles(excelUrls, jsonFile);
