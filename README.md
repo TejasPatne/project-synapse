@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+# Project Synapse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Instructions
 
-Currently, two official plugins are available:
+To update every year, follow these steps:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Add the Year**: Update the `excelUrls` in the `scripts/excelToJson.js` file with the appropriate year. For example, for the 2025-26 year, add the URL of the Google Sheet under the corresponding year key.
 
-## Expanding the ESLint configuration
+2. **Google Sheet Template**: The Google Sheets document must strictly follow the provided template:
+   [Google Sheet Template](https://docs.google.com/spreadsheets/d/1pGHCFBT3SH4mmhVEBfLZh3WzbQiwsvHWOhTk8E9BHd8/edit?usp=sharing). 
+   
+   **Important**:
+   - The sheet should **NOT** contain any hyperlinks.
+   - Ensure the data structure in the sheet matches the template exactly.
+   - YouTube video links should be in the format of `https://www.youtube.com/embed/<video_id>`
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+3. **Updating the URL**: After adding the Google Sheet link for the desired year, the `excelUrls` in the `scripts/excelToJson.js` should look like this:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   ```js
+   const excelUrls = {
+     "2023-24": "https://docs.google.com/spreadsheets/d/1J1l2kgFThQbZEfVpVGgsP2dsU_xX46bWgzz9it7qMDw/export?format=xlsx",
+     "2024-25": "https://docs.google.com/spreadsheets/d/1Ru8gJX435uWEUgyiCefIT-yBX9IORlG_kioHpNQJ-fY/export?format=xlsx",
+     "2025-26": "sheet link will go here",
+   };

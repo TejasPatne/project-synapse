@@ -5,15 +5,21 @@ type ProjectProps = {
   title: string;
   domain: string;
   guide: string;
+  year?: string; // Added year property for the new data structure
 };
 
 export default function ProjectListRow({ project }: { project: ProjectProps }) {
+  // Create a link that includes both year and project index
+  const projectLink = project.year
+    ? `/project/${project.year}/${project.index}`
+    : `/project/${project.index}`;
+
   return (
     <div>
-      <Link to={`/project/${project.index}`}>
+      <Link to={projectLink}>
         <div
           className={`flex items-start justify-start space-x-8 bg-slate-100 py-2 text-slate-500
-            px-5 rounded-sm`}
+            px-5 rounded-sm hover:bg-slate-200 transition-colors`}
         >
           <div>
             <div
