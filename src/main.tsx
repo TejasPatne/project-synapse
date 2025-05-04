@@ -10,12 +10,14 @@ import Footer from "./components/Footer.tsx";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/project/:projectId" element={<Project />} />
-    </Routes>
-    <Footer />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* Support both URL patterns: with and without year */}
+        <Route path="/project/:projectId" element={<Project />} />
+        <Route path="/project/:year/:projectId" element={<Project />} />
+      </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );
