@@ -2,7 +2,7 @@
 
 ## Instructions
 
-To update every year, follow these steps:
+To update every year, follow these steps: 
 
 1. **Add the Year**: Update the `excelUrls` in the `scripts/excelToJson.js` file with the appropriate year. For example, for the 2025-26 year, add the URL of the Google Sheet under the corresponding year key.
 
